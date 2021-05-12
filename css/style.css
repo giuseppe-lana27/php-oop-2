@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Mix */
+.container{
+    width: 1200px;
+    margin: 10px auto;
+}
+h2{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    margin-top: 15px;
+}
+li{
+    margin-top: 10px;
+    font-size: 18px;
+}
+/* products */
+.single-cut{
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.single-cut img{
+    height: 300px;
+    margin-top: 25px;
+}
+
+.strato{
+    text-align: center;
+    padding: 10px;
+}
+.strato img{
+    height: 300px;
+    margin-top: 25px;
+}

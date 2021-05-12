@@ -31,7 +31,7 @@ class Guitar extends Product {
     {
         parent::__construct($_category, $_img);
         $this->brand = $_brand;
-        $this->model = $_model;        
+        $this->model = $_model;
         $this->price = $_price;
     }
     // metodi
@@ -60,26 +60,31 @@ $guitar_2 = new Guitar('Chitarra', 'https://thumbs.static-thomann.de/thumb/orig/
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
         <title>Prodotti</title>
     </head>
     <body>
-        <h2>Single Cut</h2>
-        <ul>
-            <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
-            <li>Marca: <?php echo $guitar_1->brand?></li>
-            <li>Modello: <?php echo $guitar_1->model?></li>
-            <li>Prezzo: <?php echo $guitar_1->getPrice()?> €</li>
-        </ul>
-        <img src="<?php echo $guitar_1->getImg()?>" alt="">
-
-        <h2>Strato Style</h2>
-        <ul>
-            <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
-            <li>Marca: <?php echo $guitar_2->brand?></li>
-            <li>Modello: <?php echo $guitar_2->model?></li>
-            <li>Prezzo:<?php echo $guitar_2->getPrice()?> €</li>
-        </ul>
-        <img src="<?php echo $guitar_2->getImg()?>" alt="">
-
+        <div class="container">
+            <div class="single-cut">
+                <h2>Single Cut</h2>
+                <ul>
+                    <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
+                    <li>Marca: <?php echo $guitar_1->brand?></li>
+                    <li>Modello: <?php echo $guitar_1->model?></li>
+                    <li>Prezzo: <?php echo $guitar_1->getPrice()?> €</li>
+                </ul>
+                <img src="<?php echo $guitar_1->getImg()?>" alt="Immagine Chitarra">
+            </div>            
+            <div class="strato">
+                <h2>Strato Style</h2>
+                <ul>
+                    <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
+                    <li>Marca: <?php echo $guitar_2->brand?></li>
+                    <li>Modello: <?php echo $guitar_2->model?></li>
+                    <li>Prezzo: <?php echo $guitar_2->getPrice()?> €</li>
+                </ul>
+                <img src="<?php echo $guitar_2->getImg()?>" alt="Immagine Chitarra">
+            </div>            
+        </div>
     </body>
 </html>
