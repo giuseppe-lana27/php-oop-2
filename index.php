@@ -65,19 +65,21 @@ $guitar_2 = new Guitar('Chitarra', 'https://thumbs.static-thomann.de/thumb/orig/
     <body>
         <h2>Single Cut</h2>
         <ul>
-            <li><?php echo $guitar_2->getCategory()?></li>
-            <li><?php echo $guitar_1->brand?></li>
-            <li><?php echo $guitar_1->model?></li>
-            <li><?php echo $guitar_1->getPrice()?> €</li>
-            <img src="<?php echo $guitar_1->getImg()?>" alt="">
+            <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
+            <li>Marca: <?php echo $guitar_1->brand?></li>
+            <li>Modello: <?php echo $guitar_1->model?></li>
+            <li>Prezzo: <?php echo $guitar_1->getPrice()?> €</li>
         </ul>
+        <img src="<?php echo $guitar_1->getImg()?>" alt="">
+
         <h2>Strato Style</h2>
         <ul>
-            <li><?php echo $guitar_2->getCategory()?></li>
-            <li><?php echo $guitar_2->brand?></li>
-            <li><?php echo $guitar_2->model?></li>
-            <li><?php echo $guitar_2->getPrice()?> €</li>
-            <img src="<?php echo $guitar_2->getImg()?>" alt="">
+            <li>Categoria: <?php echo $guitar_2->getCategory()?></li>
+            <li>Marca: <?php echo $guitar_2->brand?></li>
+            <li>Modello: <?php echo $guitar_2->model?></li>
+            <li>Prezzo:<?php echo $guitar_2->getPrice()?> €</li>
         </ul>
+        <img src="<?php echo $guitar_2->getImg()?>" alt="">
+
     </body>
 </html>
